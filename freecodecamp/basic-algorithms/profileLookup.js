@@ -40,9 +40,13 @@ const contacts = [
   function lookUpProfile(name, prop) {
     // Only change code below this line
   
-
+    for (let i = 0; i < contacts.length; i++) {
+      if (contacts[i].firstName === name) {
+        return contacts[i].likes;
+      }
+    }
   
     // Only change code above this line
   }
-
+  console.log(lookUpProfile("Akira", "likes"));
   lookUpProfile("Akira", "likes");
