@@ -37,6 +37,8 @@ const contacts = [
   },
 ];
 
+// function lookUpProfile(name, prop) {
+    
 const lookUpProfile = (name, prop) => {
   // Only change code below this line
 
