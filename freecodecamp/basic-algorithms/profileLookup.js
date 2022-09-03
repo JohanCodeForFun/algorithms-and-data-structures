@@ -38,23 +38,49 @@ const contacts = [
 ];
 
 // function lookUpProfile(name, prop) {
-    
-const lookUpProfile = (name, prop) => {
+
+const index = contacts.find(function(findNameProp, index) {
+
+    return findNameProp.firstName === 'Akira';
+});
+
+console.log(index);
+
+
+
+
+
+
+
+// const lookUpProfile = contacts.find(x => {
+//     const firstN = x.firstName;
+//     return firstN === x;
+// })
+
+// const lookUpProfile = (name, prop) => contacts.find(x => x.firstName === name);
+
+// let result = lookUpProfile('Sherlock', contacts);
+
+
+
+// const lookUpProfile = (name, prop) => {
   // Only change code below this line
 
-  for (let i = 0; i < contacts.length; i++) {
-    let contact = contacts[i];
 
-    if (contact.firstName === name) {
-      if (contact[prop] != undefined) {
-      return contact[prop];
-    } 
-    return "No such property";
-  }
-}
-      return "No such contact";
+
+//   for (let i = 0; i < contacts.length; i++) {
+//     let contact = contacts[i];
+
+//     if (contact.firstName === name) {
+//       if (contact[prop] != undefined) {
+//       return contact[prop];
+//     } 
+//     return "No such property";
+//   }
+// }
+//       return "No such contact";
 
   // Only change code above this line
-}
-console.log(lookUpProfile("Akira", "likes"));
-lookUpProfile("Akira", "likes");
+// }
+// console.log(lookUpProfile("Akira", "likes"));
+// lookUpProfile("Akira", "likes");
