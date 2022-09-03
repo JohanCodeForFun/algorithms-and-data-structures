@@ -39,9 +39,27 @@ const contacts = [
 
 // function lookUpProfile(name, prop) {
 
-const lookUpProfile = (name, prop) => contacts.find(firstName => firstName.firstName === name);
+const index = contacts.find(function(findNameProp, index) {
 
-let result = lookUpProfile('Kristian', contacts);
+    return findNameProp.firstName === 'Akira';
+});
+
+console.log(index);
+
+
+
+
+
+
+
+// const lookUpProfile = contacts.find(x => {
+//     const firstN = x.firstName;
+//     return firstN === x;
+// })
+
+// const lookUpProfile = (name, prop) => contacts.find(x => x.firstName === name);
+
+// let result = lookUpProfile('Sherlock', contacts);
 
 
 
@@ -64,5 +82,5 @@ let result = lookUpProfile('Kristian', contacts);
 
   // Only change code above this line
 // }
-console.log(lookUpProfile("Akira", "likes"));
-lookUpProfile("Akira", "likes");
+// console.log(lookUpProfile("Akira", "likes"));
+// lookUpProfile("Akira", "likes");
