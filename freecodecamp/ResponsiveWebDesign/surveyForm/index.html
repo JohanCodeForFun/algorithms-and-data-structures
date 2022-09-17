@@ -8,18 +8,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 id="title">Survey form for Scrum Planning</h1>
-    <p id="description">This is a survey form to help your Scrum Planning and get fedback.</p>
+    <section class="section-title">
+
+        <h1 id="title">Survey form for Scrum Planning</h1>
+        <p id="description">This is a survey form to help your Scrum Planning and get fedback.</p>
+    </section>
+
+    <section class="form">
+
+
 
     <form action="" id="survey-form">
         <label for="name" id="name-label">Enter name</label>
-        <input type="text" required id="name">
+        <input type="text" required id="name" placeholder="Enter name">
 
         <label for="email" id="email-label">Enter email</label>
-        <input type="email" id="email">
+        <input type="email" required id="email" placeholder="Enter email">
 
-        <label for="number" id="number-label">Enter number</label>
-        <input type="number" id="number" min="5" max="10">
+        <label for="number" id="number-label">Enter phone number</label>
+        <input type="number" id="number" min="5" max="10" placeholder="Enter phone number">
 
         <select name="select-scrum" id="dropdown">
             <option value="beginner">Beginner</option>
@@ -27,8 +34,26 @@
             <option value="advanced">Advanced</option>
         </select>
 
+        <fieldset>
+            <legend>Consulation Length</legend>
+            <label for="consultation30min">Consulation: 30min</label>
+            <input type="radio" id="30min" name="consultation30min" value="30min">
+            <label for="consultation60min">Consulation: 60min</label>
+            <input type="radio" id="60min" name="consultation60min" value="60min">
+            <label for="consultation90min">Consulation: 90min</label>
+            <input type="radio" id="90min" name="consultation90min" value="90min">
+        </fieldset>
+
+        <label for="business">Business related</label>
+        <input type="checkbox" id="business" name="business" value="business">
+        <label for="personal">Personal related</label>
+        <input type="checkbox" id="personal" name="personal" value="personal">
+
         <textarea name="text-area" id="message" cols="30" rows="10"></textarea>
 
+        <input type="submit" id="submit">
     </form>
+</section>
+
 </body>
 </html>
