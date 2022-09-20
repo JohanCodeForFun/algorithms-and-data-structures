@@ -7,18 +7,27 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    background-image: url(scrumboard.png);
+    background-position: center;
+    background-position: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .header-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
 .form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid red;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: .5rem;
+    color: white;
 }
