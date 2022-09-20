@@ -10,7 +10,7 @@
 <body>
     <main id="main-doc">
         <nav id="navbar">
-            <header>navbar</header>
+            <header>JS DSA</header>
             <ul>
                 <li><a class="nav-link"  href="#JavaScript_Algorithms_and_Data_Structures">Overview of JS DSA</a></li>
                 <li><a class="nav-link"  href="#Basic_Javascript">Basic Javascript</a></li>
@@ -41,16 +41,115 @@
                 <header>Basic Javascript
                 </header>
                 <p>
-                    Overview of JavaScript Algorithms and Data Structures.
+                    Javascript is the langugage of the web. When you want to make your website interactive,Javascript is the way to do it. With JavaScript you can change the webpages by getting
+                    an element, like an button, and say onclick, add 10 points to intellect to your roleplaying character. With additional function to get bonus stats in charisma for every 20th point. 
                 </p>                
+                <p>
+                    Here is an example of a simple function where intellect is set to 10. And at level up an additional 10 is placed in intellect, resulting in 20 int and +10 bonus to charisma.
+                    <pre>function levelUp(intExperience) {
+                            let intellect = 10;
+                            console.log("intellect: " + intellect)
+                            intExperience = intellect += 10;
+                            let charisma = 20;
+                            if (intellect === 20) {
+                                charisma += 10;
+                                console.log("+10 intellect! Total, " + intellect);
+                                console.log("+10 bonus charisma! Total, " + charisma);
+                                return;
+                            };
+                            intellect += 10;
+                            console.log("+10 intellect! Total, " + intellect);
+                        };
+                        </pre>
+                        
+                        <p>When I run <code>levelUp(10)</code> the output in the console.log message will be, </p>
+
+                        <pre>// result in console.log:
+                        intellect: 10
+                        +10 intellect! Total, 20
+                        +10 bonus charisma! Total, 30
+                    </pre>
+                </p>
             </section>
 
             <section class="main-section" id="ECMAScript_6">
                 <header>ECMAScript 6
                 </header>
                 <p>
-                    Overview of JavaScript Algorithms and Data Structures.
+                    With es6 came a lot of new features...
                 </p>                
+                <p>
+                    <span> Here are just a few good to know features explained: </span>
+                    <ul>
+                        <li>Template literals</li>
+                        <li>Arrow function expressions</li>
+                        <li>let and const</li>
+                        <li>Spread and Rest syntaxes</li>
+                        <li>Classes</li>
+                    </ul>
+                    <p>
+                        <span>Template literals:</span> The ability to write javascript with HTML code. For example you can write, <code>`Charisma level is: ${charisma}`</code> to get the charisma value within the paragraph text.
+                    </p>
+                    <p>
+                        <span>Arrow function expressions:</span> here is the difference between a simple addition function.
+                    </p>
+                    <pre>function add(num1, num2) {
+                        return num1 + num2;
+                    }
+                    </pre>
+                    <p>With arrow functions it looks like,</p>
+                    <pre>const add = (num1, num2) => a + b;</pre>
+                    <p>
+                        With the shorter syntax it helps clean up the code and run immedieatly without return key word, it has a lot of benefits, but also some drawbacks such as changing how .this keyword behaves and can't be a constructor.
+                    </p>
+                    <p>
+                        <span>let and const!</span> With the addition of the ability to declare variables with let and const, it changed from using <code>var avocado = 3</code> to <code>let avocado = 3</code>. Which might not seem like a big change. But the <code>var</code> keyword is a global variable, which is accesable for the entire page, also called "global scope". While <code>let</code> and <code>const</code> is in block scope. Which simply is only avalible inside their function code. Example:
+                    </p>
+                    <pre>function add(num1, num2) {
+                        var num1 = 10;
+                        var num2 = 20;
+                        var result = num1 + num2;
+                        return result;
+                    }
+                    </pre>
+                    <p><code>num1</code> and <code>num2</code> are both avalible outside of block scope. If I were to add it outside, it would update inside the function. Which isn't so bad if you are aware of it. But once you have multiple functions, you might end up overwritting one of them resulting in wrong calculations.</p>
+                    <p>If instead you would use <code>let</code> (<code>const</code> is used with constant variables), it would only be avalible in the function scope, which means you could use it again for a similair function in another part of your code without overwrtiing your earlier function.
+                    </p>
+
+                    <p><span>Spread and Rest syntaxes (…)</span>
+                    </p>
+                    
+                   <p><span>Classes:</span>
+                </p>
+                    
+                </p>
+                <p>
+                    <span> List of New Features in ES6:</span>
+                    The let keyword,
+                    The const keyword,
+                    Arrow Functions,
+                    For/of,
+                    Map Objects,
+                    Set Objects,
+                    Classes,
+                    Promises,
+                    Symbol,
+                    Default Parameters,
+                    Function Rest Parameter,
+                    String.includes(),
+                    String.startsWith(),
+                    String.endsWith(),
+                    Array.from(),
+                    Array keys(),
+                    Array find(),
+                    Array findIndex(),
+                    New Math Methods,
+                    New Number Properties,
+                    New Number Methods,
+                    New Global Methods,
+                    Object entries,
+                    JavaScript Modules. (List from <a href="https://www.w3schools.com/js/js_es6.asp">w3schools.</a>)
+                </p>
             </section>
 
             <section class="main-section" id="Regular_Expressions">
