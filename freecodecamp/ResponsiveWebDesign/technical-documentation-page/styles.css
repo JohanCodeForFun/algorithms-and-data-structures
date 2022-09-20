@@ -13,9 +13,19 @@
 
 #navbar {
     grid-area: navbar;
+    border: 1px solid red;
 }
 
 #main-container {
     grid-area: mainSection;
+    border: 1px blue solid;
+}
+
+nav > header {
+    font-size: 2.5rem;
+}
+
+section > header {
+    font-size: 2rem;
 }
 
