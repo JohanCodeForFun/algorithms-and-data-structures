@@ -43,6 +43,11 @@ h2 {
     border: 1px solid red;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 #img-caption {
     margin-top: .5rem;
     text-align: center;
