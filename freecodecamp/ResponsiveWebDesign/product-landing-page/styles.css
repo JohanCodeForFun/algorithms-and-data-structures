@@ -4,7 +4,21 @@
     box-sizing: border-box;
 }
 
+header {
+    border: 1px solid red;
+    margin: 0 2rem;
+}
+
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-fill {
+    flex: 1;
+}
+
+nav ul li {
+    display: inline;
 }
