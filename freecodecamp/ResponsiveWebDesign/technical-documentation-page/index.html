@@ -10,7 +10,7 @@
 <body>
     <main id="main-doc">
         <nav id="navbar">
-            <header>JS DSA</header>
+            <header>JS Doc.</header>
             <ul>
                 <li><a class="nav-link"  href="#JavaScript_Algorithms_and_Data_Structures">Overview of JS DSA</a></li>
                 <li><a class="nav-link"  href="#Basic_Javascript">Basic Javascript</a></li>
@@ -33,7 +33,7 @@
                         JavaScript Algorithms and Data Structures
                 </header>
                 <p>
-                    Overview of JavaScript Algorithms and Data Structures.
+                    My collected notes and thoughts of the JavaScript langugage and Algorithms and Data Structures.
                 </p>                
             </section>
 
@@ -116,8 +116,18 @@
                     <p>If instead you would use <code>let</code> (<code>const</code> is used with constant variables), it would only be avalible in the function scope, which means you could use it again for a similair function in another part of your code without overwrtiing your earlier function.
                     </p>
 
-                    <p><span>Spread and Rest syntaxes (…)</span>
+                    <p><span>Spread and Rest syntaxes (…)</span> helps you copy an entire array to another array or make it easier to sum numbers together. Here's an example,
                     </p>
+                    <pre>
+                    function sum(num1, num2, num3) {
+                        return num1 + num2 + num3;
+                    }
+
+                    const numbers = [10, 20, 30];
+
+                    console.log(sum(...numbers));
+                    // expected result: 60
+                </pre>
                     
                    <p><span>Classes:</span>
                 </p>
