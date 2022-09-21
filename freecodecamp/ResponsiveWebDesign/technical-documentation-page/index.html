@@ -79,7 +79,7 @@
                     With es6 came a lot of new features...
                 </p>                
                 <p>
-                    <span> Here are just a few good to know features explained: </span>
+                    <h3> Here are just a few good to know features explained: </h3>
                     <ul>
                         <li>Template literals</li>
                         <li>Arrow function expressions</li>
@@ -87,11 +87,13 @@
                         <li>Spread and Rest syntaxes</li>
                         <li>Classes</li>
                     </ul>
+                    <h3>Template literals:</h3> 
                     <p>
-                        <span>Template literals:</span> The ability to write javascript with HTML code. For example you can write, <code>`Charisma level is: ${charisma}`</code> to get the charisma value within the paragraph text.
+                        The ability to write javascript with HTML code. For example you can write, <code>`Charisma level is: ${charisma}`</code> to get the charisma value within the paragraph text.
                     </p>
+                    <h3>Arrow function expressions:</h3> 
                     <p>
-                        <span>Arrow function expressions:</span> here is the difference between a simple addition function.
+                    Here is the difference between a simple addition function.
                     </p>
                     <pre>function add(num1, num2) {
                         return num1 + num2;
@@ -102,8 +104,9 @@
                     <p>
                         With the shorter syntax it helps clean up the code and run immedieatly without return key word, it has a lot of benefits, but also some drawbacks such as changing how .this keyword behaves and can't be a constructor.
                     </p>
+                    <h3>let and const!</h3> 
                     <p>
-                        <span>let and const!</span> With the addition of the ability to declare variables with let and const, it changed from using <code>var avocado = 3</code> to <code>let avocado = 3</code>. Which might not seem like a big change. But the <code>var</code> keyword is a global variable, which is accesable for the entire page, also called "global scope". While <code>let</code> and <code>const</code> is in block scope. Which simply is only avalible inside their function code. Example:
+                        With the addition of the ability to declare variables with let and const, it changed from using <code>var avocado = 3</code> to <code>let avocado = 3</code>. Which might not seem like a big change. But the <code>var</code> keyword is a global variable, which is accesable for the entire page, also called "global scope". While <code>let</code> and <code>const</code> is in block scope. Which simply is only avalible inside their function code. Example:
                     </p>
                     <pre>function add(num1, num2) {
                         var num1 = 10;
@@ -116,7 +119,9 @@
                     <p>If instead you would use <code>let</code> (<code>const</code> is used with constant variables), it would only be avalible in the function scope, which means you could use it again for a similair function in another part of your code without overwrtiing your earlier function.
                     </p>
 
-                    <p><span>Spread and Rest syntaxes (…)</span> helps you copy an entire array to another array or make it easier to sum numbers together. Here's an example,
+                    <h3>Spread and Rest syntaxes (…)</h3> 
+                    <p>
+                        Helps you copy an entire array to another array or make it easier to sum numbers together. Here's an example,
                     </p>
                     <pre>
                     function sum(num1, num2, num3) {
@@ -128,13 +133,25 @@
                     console.log(sum(...numbers));
                     // expected result: 60
                 </pre>
-                    
-                   <p><span>Classes:</span>
-                </p>
-                    
-                </p>
                 <p>
-                    <span> List of New Features in ES6:</span>
+                    Spread also makes it easier to copy an array of items to a new array like this,:
+                </p>
+                <pre>
+                    const fruitBasket = ["Banana", "Apple", "Orange"];
+                    const shoppingCart = ["Pizza", "Soda", ...fruitBasket];
+                    // Output: (5) ['Pizza', 'Soda', 'Banana', 'Apple', 'Orange']
+                </pre>
+
+                <h3>Rest Parameters: 
+                </h3>
+                    
+                   <h3>Classes:
+
+                   </h3>
+                    
+                </p>
+                <h3> List of New Features in ES6:</h3>
+                <p>
                     The let keyword,
                     The const keyword,
                     Arrow Functions,

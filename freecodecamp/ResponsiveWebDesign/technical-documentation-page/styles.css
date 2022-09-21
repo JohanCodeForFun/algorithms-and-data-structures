@@ -66,6 +66,7 @@ section > header {
 }
 
 pre {
+    font-size: 1rem;
     white-space: pre-line;
     background-color: #e5e1e1;
     color: black;
