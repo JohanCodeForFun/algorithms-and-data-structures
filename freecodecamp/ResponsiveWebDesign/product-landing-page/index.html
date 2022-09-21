@@ -9,18 +9,48 @@
 </head>
 <body>
     <header id="header">
-        
-        <nav id="nav-bar">
+        <div class="logo">
             <img src="/images/ducky-crop-104x48.png" height="72" width="auto" alt="" id="header-img">
+        </div>
+        <nav id="nav-bar">
             <div class="header-fill"></div>
             <ul>
-                <li><a class="nav-link" href="#">Link 1</a></li>
-                <li><a class="nav-link" href="#">Link 2</a></li>
-                <li><a class="nav-link" href="#">Link 3</a></li>
+                <li><a class="nav-link" href="#">Feature</a></li>
+                <li><a class="nav-link" href="#">How it works</a></li>
+                <li><a class="nav-link" href="#">Pricing</a></li>
             </ul>
         </nav>
     </header>
     <main>
+
+        <section class="hero-image">
+            <h1>Lonely at night coding?</h1>
+            <h1>Can't figure out why the div won't center?</h1>
+            <h1>Afraid to ask a stupid question on Discord?</h1>
+        </section>
+
+        <section class="testimonial">
+            <h2>Introducing: Ducky!</h2>
+            <img id="ducky" src="/images/ducky-720x540.png" alt="Rubber duck">
+            <p>The rubber duck that helps you troubleshoot your code.</p>
+            <p>Someone that listens to your problems, and won't talk back (much most of the time).</p>
+        </section>
+
+        <section class="products">
+            <h3>Ducky's Friends:</h3>
+            <img src="/images/ducky-ducks-720x540.png" alt="Ducky ducks">
+            <img src="/images/ducky-bath-720x540.png" alt="Ducky bath">
+        </section>
+
+        <section id="signup-form">
+            <h3>Want to get the latest news in ducky and friends?</h3>
+            <p>Enter your name and email to get the latest news in your inbox!</p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="text" name="firstName" placeholder="Input name">
+                <input type="email" name="email" id="email" placeholder="input email">
+                <input type="submit" id="submit">
+            </form>
+        </section>
 
     </main>
 
