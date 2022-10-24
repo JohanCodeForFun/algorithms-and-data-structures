@@ -3,9 +3,9 @@ let fresh = ["Asp", "Carp", "Ide", "Trout"];
 
 let fishReunion = (sea, fresh) => {
   let sortedFish = [];
-  // let sortedFish = [...fresh, ...sea];
-  // console.log(sortedFish.length)
-  // sortedFish.sort();
+//   let sortedFish = [...fresh, ...sea];
+//   console.log(sortedFish.length)
+//   sortedFish.sort();
 
   sortedFish.sort((a, b) => {});
 
