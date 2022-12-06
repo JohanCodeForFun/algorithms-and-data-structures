@@ -120,14 +120,11 @@ function getRating(watchList) {
   let averageRating = 0;
   let newArr = [];
   newArr.push(watchList.filter(directed => directed.Director === "Christopher Nolan"))
-  console.log(newArr[0][0].imdbRating)
 
   const newArrFlat = newArr.flatMap(obj => obj)
-    const ratingsArray = newArrFlat.map(rating => rating.imdbRating).map(Number)
-    console.log(ratingsArray);
-    let sumOfRatings = ratingsArray.reduce((accumulator, currentValue) => accumulator + currentValue, averageRating);
-    console.log(sumOfRatings);
-    averageRating = sumOfRatings / ratingsArray.length;
+  const ratingsArray = newArrFlat.map(rating => rating.imdbRating).map(Number)
+  let sumOfRatings = ratingsArray.reduce((accumulator, currentValue) => accumulator + currentValue, averageRating);
+  averageRating = sumOfRatings / ratingsArray.length;
 
   // Only change code above this line
   return averageRating;
