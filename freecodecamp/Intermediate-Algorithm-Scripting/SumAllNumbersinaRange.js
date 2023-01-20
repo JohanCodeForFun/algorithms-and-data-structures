@@ -16,7 +16,22 @@ function sumAll(arr) {
   return result;
 }
 
-const result = sumAll([1, 4]);
+sumAll([1, 4]);
+console.log(result);
+
+// another way to solve it
+function sumAll(arr) {
+  let result = 0;
+  const maxNum = Math.max(...arr);
+  const minNum = Math.min(...arr);
+
+  for (let i = minNum; i <= maxNum; i++) {
+    result += i;
+  }
+  return result;
+}
+
+sumAll([1, 4]);
 console.log(result);
 
 // another way to solve in within for-loop
