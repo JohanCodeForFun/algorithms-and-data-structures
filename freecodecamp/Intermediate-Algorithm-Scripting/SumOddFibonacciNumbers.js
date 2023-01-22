@@ -18,40 +18,6 @@ function sumFibs(num) {
 
 sumFibs(4);
 
-// //
-// function sumFibs(num) {
-//   let result = 0;
-//   let temp = 0;
-//   let oddFibo = 0;
-
-//   for (let i = 0; i <= num; i++) {
-//     if (oddFibo % 2 === 0) {
-//       // even numbers (i)
-//     } else {
-//       result += oddFibo;
-//       temp = oddFibo;
-//       // oddFiboArr.push(oddFibo);
-//       console.log(temp, oddFibo, result);
-//     }
-//     oddFibo++;
-//   }
-
-// for (let i = 0; i < num - 1; i++) {
-//   // console.log(oddFiboArr[i]);
-//   result += oddFiboArr[i];
-//   if (result === num) {
-//     break;
-//   }
-//   console.log(result);
-// console.log(result, "round: ", i);
-// console.log(oddFiboArr[i], oddFiboArr[i + 1]);
-// if ((result = num)) {
-//   console.log("if", result);
-// }
-
-//   return result;
-// }
-
 const result1 = sumFibs(4);
 const result2 = sumFibs(10);
 const result3 = sumFibs(1000);
