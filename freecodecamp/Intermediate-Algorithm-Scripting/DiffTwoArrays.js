@@ -3,21 +3,45 @@
 // Note: You can return the array with its elements in any order.
 
 function diffArray(arr1, arr2) {
-  const newArr = [...arr1, ...arr2];
-  const result = newArr.filter(item => {
-    if (arr1.includes(item) != arr2.includes(item)) {
-      return item
-    }
-  })
-  return result;
+  const newArr = [];
+
+  const compareArr = (a, b) => {
+    a.filter((element) => {
+      if (!b.includes(element)) {
+        newArr.push(element);
+      }
+    });
+  };
+  compareArr(arr1, arr2);
+  compareArr(arr2, arr1);
+
+  return newArr;
 }
 
-let result = diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+const result = diffArray(
+  ["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"],
+  ["diorite", "andesite", "grass", "dirt", "dead shrub"]
+);
 console.log(result);
-console.log(diffArray(["diorite", "andesite", "grass", "dirt", "dead shrub"], ["diorite", "andesite", "pink wool", "grass", "dirt", "dead shrub"]));
 
+//
+// function diffArray(arr1, arr2) {
+//   const newArr = [...arr1, ...arr2];
+//   const result = newArr.filter(item => {
+//     if (arr1.includes(item) != arr2.includes(item)) {
+//       return item
+//     }
+//   })
+//   return result;
+// }
 
-// Another solution, 
+// let result = diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+// console.log(result);
+// console.log(diffArray(
+// ["diorite", "andesite", "grass", "dirt", "dead shrub"],
+// ["diorite", "andesite", "pink wool", "grass", "dirt", "dead shrub"]));
+
+// Another solution,
 // function diffArray(arr1, arr2) {
 //   const newArr = [];
 
@@ -31,7 +55,6 @@ console.log(diffArray(["diorite", "andesite", "grass", "dirt", "dead shrub"], ["
 
 //   compareArr(arr1, arr2)
 //   compareArr(arr2, arr1)
-
 
 //   return newArr;
 // }
