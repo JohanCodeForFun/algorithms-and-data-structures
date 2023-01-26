@@ -1,5 +1,6 @@
 // Pig Latin
 // Translate the provided string to Pig Latin. Input strings are guaranteed to be English words in all lowercase.
+// solution from Useful Programmer @ Youtube
 
 function translatePigLatin(str) {
   let vowels = "aeiou".split("");
