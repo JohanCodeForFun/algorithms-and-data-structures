@@ -16,6 +16,9 @@ const maximumWealth = (accounts) => {
   return result;
 };
 
+// Time complexity = O(n x m)
+// Space Complexity = O(1)
+
 // solution with forEach and reduce
 // const maximumWealth = function (accounts) {
 //   let result = 0;
