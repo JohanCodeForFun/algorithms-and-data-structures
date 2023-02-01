@@ -3,11 +3,7 @@
 
 function palindrome(str) {
   let specialCharactersRemoved = str.replace(/[\W+\_]/g, "").toLowerCase();
-  console.log(specialCharactersRemoved);
-  let splitStr = specialCharactersRemoved.split("");
-  let reversedStr = splitStr.reverse().join("").toLowerCase();
-  console.log(reversedStr);
-
+  let reversedStr = specialCharactersRemoved.split("").reverse().join("");
   return specialCharactersRemoved === reversedStr ? true : false;
 }
 
