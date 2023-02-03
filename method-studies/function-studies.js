@@ -21,7 +21,7 @@ const getDogQoute = (breed) => {
   return breeds[breed] ?? "Fel meddelande";
 };
 
-console.log(getDogQoute("lit"));
+console.log(getDogQoute("liten"));
 
 // Arguments Optional, from FreeCodeCamp Intermediate Algorithm Scripting
 // Create a function that sums two arguments together. If only one argument is provided, then return a function that expects one argument and returns the sum.
